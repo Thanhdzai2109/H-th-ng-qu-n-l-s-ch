@@ -39,7 +39,7 @@ public class UserService {
 	public User addNew(User user) {
 		user.setPassword( passwordEncoder.encode(user.getPassword()) );
 		user.setCreatedDate( new Date() );
-		user.setLastModifiedDate( user.getCreatedDate() );
+		user.setLastModifiedDate( new Date() );
 		user.setActive(1);
 		return userRepository.save(user);
 	}

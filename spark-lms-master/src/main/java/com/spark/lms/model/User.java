@@ -57,7 +57,7 @@ public class User implements Serializable {
 	@Column(name = "role")
 	private String role;
 	
-	@NotNull
+
 	@Column(name = "created_date")
 	private Date createdDate;
 	
